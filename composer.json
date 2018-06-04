@@ -1,0 +1,40 @@
+{
+    "name": "y7k/craft-craftql-whitelist",
+    "description": "Whitelists CraftQL Queries",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craftql"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Krieg",
+            "homepage": "https://y7k.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "y7k\\craftqlwhitelist\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Craftql Whitelist",
+        "handle": "craftql-whitelist",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "class": "y7k\\craftqlwhitelist\\CraftqlWhitelist"
+    }
+}
