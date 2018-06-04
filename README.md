@@ -23,7 +23,7 @@ To install the plugin, follow these instructions.
 
 ## CraftQL Whitelist Overview
 
-CraftQL Whitelist validates GraphQL queries against a whitelist and only allows queries that are part of the list. You need to use [https://github.com/apollographql/persistgraphql](persistgraphql) to export the whitelist.
+CraftQL Whitelist validates GraphQL queries against a whitelist and only allows queries that are part of the list. You need to use [persistgraphql](https://github.com/apollographql/persistgraphql) to export the whitelist.
 
 A common command would be:
 
@@ -31,4 +31,6 @@ A common command would be:
 persistgraphql api/graphql/  --add_typename --extension=gql plugins/craft-craftql-whitelist/src/config/whitelist.json
 ```
 
-This exports all *.gql files in the folder "api/graphql" and saves it directly inside the plugin folder.
+This exports all *.gql files in the folder "api/graphql" and saves it directly inside the plugin folder. You probably want the whitelist to be part of the repository anyway.
+
+Caution: this is a temporary plugin made to place into `/plugins` and install by hand. It is not on composer yet.
