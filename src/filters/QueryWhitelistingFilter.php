@@ -81,9 +81,9 @@ class QueryWhitelistingFilter extends ActionFilter
      */
     private function isAllowedVars($operationName, $variables)
     {
-        if ($operationName === 'couponConnectionGraph' && (!isset($variables->code) || !$variables->code)) {
-            return false;
-        }
+        // if ($operationName === 'couponConnectionGraph' && (!isset($variables->code) || !$variables->code)) {
+        //     return false;
+        // }
         return true;
     }
 }
